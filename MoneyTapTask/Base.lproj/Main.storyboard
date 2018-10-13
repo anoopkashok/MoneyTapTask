@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QV8-oa-2Lh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,87 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoneyTapTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="14Y-E4-kOg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="coG-42-ohA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Rc5-Cr-bc2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="14Y-E4-kOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RhZ-M3-lFD"/>
+                            <constraint firstItem="14Y-E4-kOg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YGT-Gp-ZDZ"/>
+                            <constraint firstItem="14Y-E4-kOg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f56-Gk-xh9"/>
+                            <constraint firstItem="14Y-E4-kOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vLQ-8Q-HbO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MQY-w2-rPz"/>
+                    <connections>
+                        <outlet property="list" destination="14Y-E4-kOg" id="elO-TW-rEo"/>
+                        <outlet property="tableBottomConstraints" destination="f56-Gk-xh9" id="CIg-9d-Laa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="131.78410794602701"/>
+        </scene>
+        <!--Detail Page View Controller-->
+        <scene sceneID="rcU-TI-aiK">
+            <objects>
+                <viewController storyboardIdentifier="DetailPageViewController" id="Unx-vL-LZl" customClass="DetailPageViewController" customModule="MoneyTapTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aR-fD-rHp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Vou-nn-3Qx">
+                                <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="OPd-4b-YxT"/>
+                                    <constraint firstAttribute="height" constant="20" id="qAa-LJ-tRZ"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vou-nn-3Qx" firstAttribute="centerX" secondItem="MUF-3L-Gbb" secondAttribute="centerX" id="kFr-1q-npk"/>
+                            <constraint firstItem="Vou-nn-3Qx" firstAttribute="centerY" secondItem="MUF-3L-Gbb" secondAttribute="centerY" id="wa6-cQ-ZjR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MUF-3L-Gbb"/>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="Vou-nn-3Qx" id="Lz6-GA-odU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODT-bo-FZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887.2" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ON6-Vx-L15">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QV8-oa-2Lh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x8A-BX-fPX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qFI-v8-mJ7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ker-ga-irl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="790.25487256371821"/>
         </scene>
     </scenes>
 </document>

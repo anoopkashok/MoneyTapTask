@@ -13,9 +13,22 @@
 		6E62155D2170FCAB00D1E16C /* MoneyTapTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E62155B2170FCAB00D1E16C /* MoneyTapTask.xcdatamodeld */; };
 		6E62155F2170FCAC00D1E16C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E62155E2170FCAC00D1E16C /* Assets.xcassets */; };
 		6E6215622170FCAC00D1E16C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6215602170FCAC00D1E16C /* LaunchScreen.storyboard */; };
+		6E62156B2170FDC400D1E16C /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62156A2170FDC400D1E16C /* AlertController.swift */; };
+		6E62156E2170FE4B00D1E16C /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62156D2170FE4B00D1E16C /* NetworkInterface.swift */; };
+		6E62157321710A8800D1E16C /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62157221710A8800D1E16C /* Page.swift */; };
+		6E6215762171DFB700D1E16C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6215752171DFB700D1E16C /* placeholder.png */; };
+		6E6215782171E58500D1E16C /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6215772171E58500D1E16C /* DetailPageViewController.swift */; };
+		6E621580217229D700D1E16C /* PageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62157E217229D700D1E16C /* PageListCell.swift */; };
+		6E621581217229D700D1E16C /* PageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62157F217229D700D1E16C /* PageListCell.xib */; };
+		6E6215842172326B00D1E16C /* PersistantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6215832172326B00D1E16C /* PersistantService.swift */; };
+		6E62158F2172354200D1E16C /* WikiPage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62158D2172354200D1E16C /* WikiPage+CoreDataClass.swift */; };
+		6E6215902172354200D1E16C /* WikiPage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62158E2172354200D1E16C /* WikiPage+CoreDataProperties.swift */; };
+		DC6994C015A90A7DBE61315A /* Pods_MoneyTapTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE42DE0DEA34BC1AFCD6B5D7 /* Pods_MoneyTapTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E7B4734A7479AE2F966B36A /* Pods-MoneyTapTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapTask/Pods-MoneyTapTask.release.xcconfig"; sourceTree = "<group>"; };
+		6B7C9047142ADA8BAC4E664B /* Pods-MoneyTapTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapTask/Pods-MoneyTapTask.debug.xcconfig"; sourceTree = "<group>"; };
 		6E6215512170FCAB00D1E16C /* MoneyTapTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTapTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6215542170FCAB00D1E16C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E6215562170FCAB00D1E16C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +37,17 @@
 		6E62155E2170FCAC00D1E16C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E6215612170FCAC00D1E16C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E6215632170FCAC00D1E16C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E62156A2170FDC400D1E16C /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		6E62156D2170FE4B00D1E16C /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
+		6E62157221710A8800D1E16C /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		6E6215752171DFB700D1E16C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		6E6215772171E58500D1E16C /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
+		6E62157E217229D700D1E16C /* PageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageListCell.swift; sourceTree = "<group>"; };
+		6E62157F217229D700D1E16C /* PageListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageListCell.xib; sourceTree = "<group>"; };
+		6E6215832172326B00D1E16C /* PersistantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantService.swift; sourceTree = "<group>"; };
+		6E62158D2172354200D1E16C /* WikiPage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WikiPage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6E62158E2172354200D1E16C /* WikiPage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WikiPage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE42DE0DEA34BC1AFCD6B5D7 /* Pods_MoneyTapTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTapTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6994C015A90A7DBE61315A /* Pods_MoneyTapTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +67,8 @@
 			children = (
 				6E6215532170FCAB00D1E16C /* MoneyTapTask */,
 				6E6215522170FCAB00D1E16C /* Products */,
+				B53157C0C5D48E50FC415CA6 /* Pods */,
+				B8E68BCFD715E051FC52AD6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +83,13 @@
 		6E6215532170FCAB00D1E16C /* MoneyTapTask */ = {
 			isa = PBXGroup;
 			children = (
-				6E6215542170FCAB00D1E16C /* AppDelegate.swift */,
-				6E6215562170FCAB00D1E16C /* ViewController.swift */,
+				6E6215822172321B00D1E16C /* PersistantService */,
+				6E621579217228FB00D1E16C /* TableViewcell */,
+				6E6215742171DFA000D1E16C /* Images */,
+				6E62157121710A7300D1E16C /* Model */,
+				6E6215702170FECF00D1E16C /* ViewController */,
+				6E62156F2170FEB500D1E16C /* AppDelegate */,
+				6E6215692170FD9A00D1E16C /* Global */,
 				6E6215582170FCAB00D1E16C /* Main.storyboard */,
 				6E62155E2170FCAC00D1E16C /* Assets.xcassets */,
 				6E6215602170FCAC00D1E16C /* LaunchScreen.storyboard */,
@@ -67,6 +99,84 @@
 			path = MoneyTapTask;
 			sourceTree = "<group>";
 		};
+		6E6215692170FD9A00D1E16C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				6E62156A2170FDC400D1E16C /* AlertController.swift */,
+				6E62156D2170FE4B00D1E16C /* NetworkInterface.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		6E62156F2170FEB500D1E16C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6E6215542170FCAB00D1E16C /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6E6215702170FECF00D1E16C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6E6215562170FCAB00D1E16C /* ViewController.swift */,
+				6E6215772171E58500D1E16C /* DetailPageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6E62157121710A7300D1E16C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E62157221710A8800D1E16C /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E6215742171DFA000D1E16C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6E6215752171DFB700D1E16C /* placeholder.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6E621579217228FB00D1E16C /* TableViewcell */ = {
+			isa = PBXGroup;
+			children = (
+				6E62157E217229D700D1E16C /* PageListCell.swift */,
+				6E62157F217229D700D1E16C /* PageListCell.xib */,
+			);
+			path = TableViewcell;
+			sourceTree = "<group>";
+		};
+		6E6215822172321B00D1E16C /* PersistantService */ = {
+			isa = PBXGroup;
+			children = (
+				6E62158D2172354200D1E16C /* WikiPage+CoreDataClass.swift */,
+				6E62158E2172354200D1E16C /* WikiPage+CoreDataProperties.swift */,
+				6E6215832172326B00D1E16C /* PersistantService.swift */,
+			);
+			path = PersistantService;
+			sourceTree = "<group>";
+		};
+		B53157C0C5D48E50FC415CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B7C9047142ADA8BAC4E664B /* Pods-MoneyTapTask.debug.xcconfig */,
+				1E7B4734A7479AE2F966B36A /* Pods-MoneyTapTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8E68BCFD715E051FC52AD6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE42DE0DEA34BC1AFCD6B5D7 /* Pods_MoneyTapTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E6215662170FCAC00D1E16C /* Build configuration list for PBXNativeTarget "MoneyTapTask" */;
 			buildPhases = (
+				E13515352FE3092AB2173F0B /* [CP] Check Pods Manifest.lock */,
 				6E62154D2170FCAB00D1E16C /* Sources */,
 				6E62154E2170FCAB00D1E16C /* Frameworks */,
 				6E62154F2170FCAB00D1E16C /* Resources */,
+				286AF333EA34D9D62BF7AEA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E621581217229D700D1E16C /* PageListCell.xib in Resources */,
 				6E6215622170FCAC00D1E16C /* LaunchScreen.storyboard in Resources */,
+				6E6215762171DFB700D1E16C /* placeholder.png in Resources */,
 				6E62155F2170FCAC00D1E16C /* Assets.xcassets in Resources */,
 				6E62155A2170FCAB00D1E16C /* Main.storyboard in Resources */,
 			);
@@ -133,13 +247,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		286AF333EA34D9D62BF7AEA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyTapTask/Pods-MoneyTapTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyTapTask/Pods-MoneyTapTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13515352FE3092AB2173F0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTapTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E62154D2170FCAB00D1E16C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E62156B2170FDC400D1E16C /* AlertController.swift in Sources */,
 				6E6215572170FCAB00D1E16C /* ViewController.swift in Sources */,
+				6E62157321710A8800D1E16C /* Page.swift in Sources */,
 				6E62155D2170FCAB00D1E16C /* MoneyTapTask.xcdatamodeld in Sources */,
+				6E6215902172354200D1E16C /* WikiPage+CoreDataProperties.swift in Sources */,
+				6E6215782171E58500D1E16C /* DetailPageViewController.swift in Sources */,
+				6E62156E2170FE4B00D1E16C /* NetworkInterface.swift in Sources */,
+				6E621580217229D700D1E16C /* PageListCell.swift in Sources */,
+				6E6215842172326B00D1E16C /* PersistantService.swift in Sources */,
+				6E62158F2172354200D1E16C /* WikiPage+CoreDataClass.swift in Sources */,
 				6E6215552170FCAB00D1E16C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,11 +453,13 @@
 		};
 		6E6215672170FCAC00D1E16C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7C9047142ADA8BAC4E664B /* Pods-MoneyTapTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L665RRN8MH;
 				INFOPLIST_FILE = MoneyTapTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +473,13 @@
 		};
 		6E6215682170FCAC00D1E16C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7B4734A7479AE2F966B36A /* Pods-MoneyTapTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L665RRN8MH;
 				INFOPLIST_FILE = MoneyTapTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
