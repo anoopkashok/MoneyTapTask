@@ -16,10 +16,10 @@ class NetworkInterface: NSObject {
         let searchStringWithoutSpace = searchString.replacingOccurrences(of: " ", with: "_")
         let baseUrl = "https://en.wikipedia.org//w/api.php?action=query&format=json&prop=pageimages%7Cpageterms&generator=prefixsearch&redirects=1&formatversion=2&piprop=thumbnail&pithumbsize=50&pilimit=10&wbptterms=description&gpssearch="
         
-        let URL_HEROES = String(format: "%@%@%@", baseUrl,searchStringWithoutSpace,"&gpslimit=10")
+        let URL_FINAL = String(format: "%@%@%@", baseUrl,searchStringWithoutSpace,"&gpslimit=10")
 
         
-        let url = URL(string: URL_HEROES)
+        let url = URL(string: URL_FINAL)
         URLSession.shared.dataTask(with: (url)!, completionHandler: {(data, response, error) -> Void in
             
             if let error = error as NSError?, error.domain == NSURLErrorDomain && error.code == NSURLErrorNotConnectedToInternet {
